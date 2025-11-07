@@ -352,28 +352,103 @@ body {
 
 /* Responsive para tablets */
 @media (max-width: 768px) {
-    .page {
-        padding: 10mm;
-    }
-    
-    .header-row {
-        flex-direction: column;
-    }
-    
-    .logo-section,
-    .title-section,
-    .code-section {
+    .container {
         width: 100%;
-        border-right: none;
-        border-bottom: 2px solid #000;
+        max-width: 100%;
     }
     
-    .code-section {
-        border-bottom: none;
+    .page {
+        padding: 5mm;
+    }
+    
+    .header-table td,
+    .info-table td,
+    .performance-table th,
+    .performance-table td,
+    .comments-table td {
+        padding: 4px;
+        font-size: 10px;
     }
     
     .rating-header {
+        font-size: 8px;
+        padding: 2px;
+    }
+    
+    .indicator-text {
         font-size: 9px;
+        padding: 4px;
+    }
+
+    /* Responsive para móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .page {
+        padding: 3mm;
+        margin-bottom: 5mm;
+    }
+    
+    .header-table td,
+    .info-table td,
+    .comments-table td {
+        padding: 3px;
+        font-size: 9px;
+    }
+    
+    .performance-table th,
+    .performance-table td {
+        padding: 2px;
+        font-size: 8px;
+    }
+    
+    .rating-header {
+        font-size: 7px;
+        padding: 1px;
+    }
+    
+    .indicator-text {
+        font-size: 8px;
+        padding: 3px;
+    }
+    
+    .text-input,
+    .date-input,
+    .time-input,
+    .military-time-input {
+        font-size: 9px;
+    }
+    
+    .comment-textarea {
+        font-size: 9px;
+    }
+    
+    .checkbox {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .logo-image {
+        width: 80px;
+        height: 40px;
+    }
+    
+    .signature-line {
+        margin: 30px 10px 5px 10px;
+    }
+}
+    
+    .performance-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
