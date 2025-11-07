@@ -525,8 +525,7 @@ input:focus {
 @media (max-width: 768px) {
     .clear-form-btn {
         display: block;
-        position: relative;
-        top: 0;
+        position: static;
         margin: 0 10px 10px auto;
         width: fit-content;
         background-color: #666;
@@ -538,7 +537,6 @@ input:focus {
         cursor: pointer;
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        z-index: 1000;
     }
 }
 
