@@ -127,6 +127,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
+
+        // ========================================
+// 5. FUNCIÓN: Limpiar todo el formulario
+// ========================================
+document.getElementById('clearFormBtn').addEventListener('click', function() {
+    // Confirmar antes de limpiar
+    if (confirm('¿Está seguro de que desea limpiar todo el formulario?')) {
+        // Limpiar todos los inputs de texto
+        const textInputs = document.querySelectorAll('input[type="text"], .text-input, .military-time-input, .code-input');
+        textInputs.forEach(input => {
+            input.value = '';
+        });
+        
+        // Limpiar todos los inputs de fecha
+        const dateInputs = document.querySelectorAll('input[type="date"], .date-input');
+        dateInputs.forEach(input => {
+            input.value = '';
+        });
+        
+        // Desmarcar todos los checkboxes
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        
+        // Limpiar todos los textareas
+        const textareas = document.querySelectorAll('textarea, .comment-textarea');
+        textareas.forEach(textarea => {
+            textarea.value = '';
+        });
+        
+        console.log('✅ Formulario limpiado correctamente');
+    }
+});
         
         // ============================================
         // CARGA DE TRABAJO: Ligera, Moderada o Intensa
