@@ -510,6 +510,26 @@ input:focus {
     transform: translateY(1px);
 }
 
+@media (max-width: 768px) {
+    .clear-form-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clear-form-btn {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        padding: 5px 12px;
+        font-size: 9px;
+    }
+}
+
 @media print {
     .clear-form-btn {
         display: none;
