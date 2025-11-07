@@ -1,0 +1,409 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 210mm; /* A4 width */
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Página */
+.page {
+    background-color: white;
+    padding: 15mm;
+    margin-bottom: 10mm;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+}
+
+.header-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 11px;
+}
+
+.logo-cell {
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo-placeholder {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+    background-color: #f0f0f0;
+}
+
+.logo-image {
+    width: 130px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.title-cell {
+    width: 50%;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-title-cell {
+    width: 35%;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.subtitle-cell {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.code-cell {
+    text-align: center;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.code-input {
+    border: none;
+    outline: none;
+    padding: 2px 4px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    width: 120px;
+}
+
+
+/* Tablas de información */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+}
+
+.info-table td {
+    border: 1px solid #000;
+    padding: 6px 8px;
+    font-size: 11px;
+}
+
+.section-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+}
+
+.label-cell {
+    font-weight: normal;
+    width: 15%;
+    background-color: white;
+}
+
+.input-cell {
+    background-color: white;
+}
+
+.checkbox-cell {
+    text-align: left;
+    padding: 6px 15px;
+}
+
+.option-cell {
+    text-align: left;
+    padding: 6px 8px;
+}
+
+/* Inputs */
+.text-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+.date-input,
+.time-input {
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+.time-input {
+    width: 100%;
+}
+
+/* Input de hora militar */
+.military-time-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 2px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-align: center;
+    font-weight: normal;
+}
+
+.military-time-input::placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+/* Checkboxes */
+.checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    accent-color: #000;
+}
+
+/* Tabla de desempeño */
+.performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+}
+
+.performance-table th,
+.performance-table td {
+    border: 1px solid #000;
+    padding: 6px 8px;
+    font-size: 11px;
+}
+
+.performance-table thead th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.indicator-header {
+    width: 55%;
+    text-align: center;
+}
+
+.rating-header {
+    width: 11.25%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.subsection-header {
+    background-color: white;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.indicator-text {
+    text-align: left;
+    padding: 6px 8px;
+    font-size: 10.5px;
+}
+
+.checkbox-center {
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+/* Tabla de comentarios */
+.comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+}
+
+.comments-table td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.comment-header {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+    padding: 8px;
+}
+
+.comment-cell {
+    background-color: white;
+}
+
+.comment-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 5px;
+    background-color: transparent;
+}
+
+/* Tabla de firmas */
+.signature-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border: none;
+}
+
+.signature-table td {
+    border: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.signature-cell {
+    width: 50%;
+}
+
+.signature-line {
+    border-bottom: 2px solid #000;
+    margin: 50px 30px 10px 30px;
+}
+
+.signature-label {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Footer de página */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    color: #666;
+}
+
+/* Estilos para impresión */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 100%;
+        box-shadow: none;
+    }
+    
+    .page {
+        box-shadow: none;
+        page-break-after: always;
+        margin-bottom: 0;
+        padding: 10mm;
+    }
+    
+    .page:last-child {
+        page-break-after: auto;
+    }
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+    .page {
+        padding: 10mm;
+    }
+    
+    .header-row {
+        flex-direction: column;
+    }
+    
+    .logo-section,
+    .title-section,
+    .code-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    
+    .code-section {
+        border-bottom: none;
+    }
+    
+    .rating-header {
+        font-size: 9px;
+    }
+}
+
+/* Estilos adicionales para mejor visualización */
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+textarea:focus,
+input:focus {
+    background-color: #fffef0;
+}
+
+/* Limpiar estilos de botón para limpiar campo */
+.clear-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.clear-btn:hover {
+    color: #000;
+}

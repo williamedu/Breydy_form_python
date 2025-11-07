@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario IPPT - Controlador de Aeródromo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- PÁGINA 1 -->
+        <div class="page">
+            <!-- Header -->
+            <table class="header-table">
+                <tr>
+                   <td rowspan="2" class="logo-cell">
+    <img src="images/IdacLogo.png" alt="Logo IDAC" class="logo-image">
+</td>
+                    <td class="title-cell">SERVICIOS DE TRÁNSITO AÉREO</td>
+                    <td class="form-title-cell">FORMULARIO IPPT</td>
+                </tr>
+                <tr>
+                    <td class="subtitle-cell">
+                        <strong>ENTRENAMIENTO IPPT</strong><br>
+                        <strong>CONTROLADOR DE AERÓDROMO</strong>
+                    </td>
+                   <td class="code-cell">
+    Código: <input type="text" class="code-input" value="F013/IDAC/CFSTA">
+</td>
+                </tr>
+            </table>
+
+            <!-- Datos del Instruido e Instructor -->
+            <table class="info-table">
+                <tr>
+                    <td colspan="2" class="section-header">Datos del instruido</td>
+                    <td colspan="2" class="section-header">Datos del instructor</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Nombre:</td>
+                    <td class="input-cell"><input type="text" class="text-input"></td>
+                    <td class="label-cell">Nombre:</td>
+                    <td class="input-cell"><input type="text" class="text-input"></td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Licencia:</td>
+                    <td class="input-cell"><input type="text" class="text-input"></td>
+                    <td class="label-cell">Licencia:</td>
+                    <td class="input-cell"><input type="text" class="text-input"></td>
+                </tr>
+            </table>
+
+            <!-- Periodo Considerado y Fecha -->
+            <table class="info-table">
+                <tr>
+                    <td colspan="2" class="section-header">Periodo Considerado</td>
+                    <td class="section-header">Fecha</td>
+                </tr>
+                <tr>
+                    <td class="label-cell">Desde</td>
+                    <td class="label-cell">Hasta</td>
+                    <td rowspan="2" class="input-cell" style="vertical-align: middle; text-align: center;"><input type="date" class="date-input"></td>
+                </tr>
+                <tr>
+                    <td class="input-cell"><input type="text" class="military-time-input" placeholder="1700" maxlength="4"></td>
+                    <td class="input-cell"><input type="text" class="military-time-input" placeholder="2100" maxlength="4"></td>
+                </tr>
+            </table>
+
+            <!-- Condiciones Meteorológicas, Complejidad y Estación -->
+            <table class="info-table">
+                <tr>
+                    <td colspan="2" class="section-header">Condiciones Meteorológicas</td>
+                    <td colspan="2" class="section-header">Complejidad</td>
+                    <td class="section-header">Estación</td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell">
+                        <label><input type="checkbox" class="checkbox"> VMC</label>
+                    </td>
+                    <td class="checkbox-cell">
+                        <label><input type="checkbox" class="checkbox"> IMC</label>
+                    </td>
+                    <td class="option-cell">No Difícil</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="checkbox"></td>
+                    <td rowspan="5" class="input-cell" style="vertical-align: middle;"><input type="text" class="text-input" style="text-align: center;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="option-cell">Ocasional</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="section-header">Carga de Trabajo</td>
+                    <td class="option-cell">Difícil</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><label><input type="checkbox" class="checkbox"> Ligera</label></td>
+                    <td class="checkbox-cell"><label><input type="checkbox" class="checkbox"> Moderada</label></td>
+                    <td class="option-cell">Muy Difícil</td>
+                    <td class="checkbox-cell"><input type="checkbox" class="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-cell"><label><input type="checkbox" class="checkbox"> Intensa</label></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+
+            <!-- Indicadores de Desempeño -->
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th class="indicator-header">Indicador de desempeño</th>
+                        <th class="rating-header">Satisfactorio</th>
+                        <th class="rating-header">Debe Mejorar</th>
+                        <th class="rating-header">Insatisfactorio</th>
+                        <th class="rating-header">N/A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Coordinación -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Coordinación</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">1.- Trabaja en equipo, con cortesía y respeto.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">2.- Efectividad de la comunicación con su coordinador.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">3.– Efectividad de la coordinación con la dependencia de salida correspondiente.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">4.- Manejo de relaciones humanas coordinado con dependencias externas.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Expedición de informaciones y autorizaciones -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Expedición de informaciones y autorizaciones</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">5.– Expedición de información de transito oportuna y en orden adecuado.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">6.– Actualización de las informaciones de aeródromo y meteorológicas a las dependencias ATS.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">7.- Actualización de las informaciones de aeródromo y meteorológicas a tripulación de vuelo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">8.– Expedición de autorizaciones ATC oportuna y de forma correcta.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Manejo del tránsito -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Manejo del tránsito</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">9.– Manejo del tránsito en el área de movimiento.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">10.– Manejo del tránsito en las inmediaciones y/o circuito.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">11.– Aplicación de la separación entre salidas basada en categoría de estela turbulenta.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">12.– Conocimiento de performance de las aeronaves.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">13.– Contacto visual con las aeronaves durante el despegue y/o aterrizaje.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="page-footer">
+                <span>Carpeta de formularios STA/Enmienda 5</span>
+                <span>Pág. 1/3</span>
+                <span>1 DE MARZO 2016</span>
+            </div>
+        </div>
+
+        <!-- PÁGINA 2 -->
+        <div class="page">
+            <!-- Header Página 2 -->
+            <table class="header-table">
+                <tr>
+                   <td rowspan="2" class="logo-cell">
+    <img src="images/IdacLogo.png" alt="Logo IDAC" class="logo-image">
+</td>
+                    <td class="title-cell">SERVICIOS DE TRÁNSITO AÉREO</td>
+                    <td class="form-title-cell">FORMULARIO IPPT</td>
+                </tr>
+                <tr>
+                    <td class="subtitle-cell">
+                        <strong>ENTRENAMIENTO IPPT</strong><br>
+                        <strong>CONTROLADOR DE AERÓDROMO</strong>
+                    </td>
+                    <td class="code-cell">
+                        Código: <strong>F013/IDAC/CFSTA</strong>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Continuación Indicadores -->
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th class="indicator-header">Indicador de desempeño</th>
+                        <th class="rating-header">Satisfactorio</th>
+                        <th class="rating-header">Debe Mejorar</th>
+                        <th class="rating-header">Insatisfactorio</th>
+                        <th class="rating-header">N/A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="indicator-text">14.– Secuenciamiento de aeronaves en tierra.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">15.– Secuenciamiento de aeronaves en el aire.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">16.– Mantenimiento de la conciencia situacional.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Criterio de control -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Criterio de control</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">17.– Aplica buen criterio de control</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">18.– Entiende la prioridad de las funciones.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">19.– Mantiene una afluencia de trabajo efectivo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Procedimientos -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Procedimientos</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">20.– Cumplimiento con las cartas de acuerdo, instrucciones locales o directrices.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">21.– Manejo de las fajas de progreso de vuelo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">22.– Manejo de las cartas del aeródromo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">23.– Informaciones de relevo completas.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Comunicación -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Comunicación</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">24.– Uso de la fraseología.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">25.– Precisión en el uso del lenguaje común y corriente.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">26.– Solo se efectúan las transmisiones necesarias.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">27.– Comunicación clara y de ritmo adecuado.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+
+                    <!-- Equipos, emergencias y/o situaciones anómalas -->
+                    <tr>
+                        <td colspan="5" class="subsection-header"><strong>Equipos, emergencias y/o situaciones anómalas</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">28.– Chequeo visual del aeródromo y sus inmediaciones en búsqueda de situaciones anómalas.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">29.-Chequeo de los equipos, frecuencia de emergencia, control de iluminación de luces del aeródromo, pistola de luces, etc.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">30.– Recuperación ante las fallas del equipo y emergencias.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">31.-Utilización/entendimiento de la capacidad del equipo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">32.-Cumplimiento con los procedimientos locales específicos.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">33.– Solicitud de las informaciones relevantes a la tripulación de vuelo.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td class="indicator-text">34.-Ofrecimiento de servicios adicionales.</td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                        <td class="checkbox-center"><input type="checkbox" class="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="page-footer">
+                <span>Carpeta de formularios STA/Enmienda 5</span>
+                <span>Pág. 2/3</span>
+                <span>1 DE MARZO 2016</span>
+            </div>
+        </div>
+
+        <!-- PÁGINA 3 -->
+        <div class="page">
+            <!-- Header Página 3 -->
+            <table class="header-table">
+                <tr>
+                 <td rowspan="2" class="logo-cell">
+    <img src="images/IdacLogo.png" alt="Logo IDAC" class="logo-image">
+</td>
+                    <td class="title-cell">SERVICIOS DE TRÁNSITO AÉREO</td>
+                    <td class="form-title-cell">FORMULARIO IPPT</td>
+                </tr>
+                <tr>
+                    <td class="subtitle-cell">
+                        <strong>ENTRENAMIENTO IPPT</strong><br>
+                        <strong>CONTROLADOR DE AERÓDROMO</strong>
+                    </td>
+                    <td class="code-cell">
+                        Código: <strong>F013/IDAC/CFSTA</strong>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Comentarios del Instructor -->
+            <table class="comments-table">
+                <tr>
+                    <td class="comment-header">Comentarios del Instructor ATC</td>
+                </tr>
+                <tr>
+                    <td class="comment-cell">
+                        <textarea class="comment-textarea" rows="8" placeholder="Escriba los comentarios del instructor aquí..."></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Comentarios del Controlador Instruido -->
+            <table class="comments-table">
+                <tr>
+                    <td class="comment-header">Comentarios del Controlador ATC Instruido</td>
+                </tr>
+                <tr>
+                    <td class="comment-cell">
+                        <textarea class="comment-textarea" rows="8" placeholder="Escriba los comentarios del instruido aquí..."></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Firmas -->
+            <table class="signature-table">
+                <tr>
+                    <td class="signature-cell">
+                        <div class="signature-line"></div>
+                        <div class="signature-label">Firma del ATC Instruido</div>
+                    </td>
+                    <td class="signature-cell">
+                        <div class="signature-line"></div>
+                        <div class="signature-label">Firma del Instructor ATC IPPT</div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="page-footer">
+                <span>Carpeta de formularios STA/Enmienda 5</span>
+                <span>Pág. 3/3</span>
+                <span>1 DE MARZO 2016</span>
+            </div>
+        </div>
+    </div>
+<!-- Script de validaciones -->
+    <script src="validaciones.js"></script>
+</body>
+</html>
